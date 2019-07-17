@@ -14,7 +14,7 @@ This is a text document that contains all the commands a user could call on the 
   ```dockerfile
   LABEL maintainer="dev@someproject.org"
   LABEL build="docker build -t "imagename:latest ."
-  LABEL run="docker run --name=model-service --rm -dit -v <PATH>:/app -p 7001:7000 modelimage"
+  LABEL run="docker run --name=model-service --rm -dit -v <PATH>:/app -p 7001:7000 modelimage:latest"
   ```
 
 #### `utils.py` 
