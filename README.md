@@ -12,9 +12,9 @@ This is a text document that contains all the commands a user could call on the 
   ```
   2. Is always good practice to add a label with instructions on how to run your docker container, so I'd recommend you to add a label like the following:
   ```dockerfile
-  LABEL maintainer="dev@someproject.org"
-  LABEL build="docker build -t "imagename:latest ."
-  LABEL run="docker run --name=model-service --rm -dit -v <PATH>:/app -p 7001:7000 modelimage:latest"
+  LABEL maintainer="dev@someproject.org" \
+        build="docker build -t "imagename:latest ." \
+        run="docker run --name=model-service --rm -dit -v <PATH>:/app -p 7001:7000 modelimage:latest"
   ```
 
 #### `utils.py` 
